@@ -1,0 +1,97 @@
+/* selector de atributo que empiece por cierto valor */
+/* [class^="it"] {
+  background-color: aqua;
+}
+
+[href^="www"] {
+  background-color: coral;
+} */
+
+/* selector de atributo que ACABE por cierto valor */
+
+/* img[src$=".png"] {
+  background-color: red;
+} */
+
+/* selector de attr que contenga cierto valor */
+
+/* li[class*="ta"] {
+  background-color: pink;
+} */
+
+/* selector pseudoclase primer hijo */
+.first-list li:first-child {
+  background-color: aqua;
+}
+
+/* selector pseudoclase ultimo hijo */
+
+ul li:last-child {
+  background-color: lightcoral;
+}
+
+/* selector pseudoclase enésimo hijo */
+li:nth-child(6) {
+  background-color: lightgreen;
+}
+
+/* selector pseudoclase enésimo hijo (pares) */
+li:nth-child(even) {
+  background-color: lightsalmon;
+}
+
+/* selector pseudoclase enésimo hijo (impares) */
+
+li:nth-child(odd) {
+  background-color: palegoldenrod;
+}
+
+/* selector pseudoclase excluyente */
+
+p:not(.hola, .adios) {
+  background-color: red;
+}
+
+/* selector pseudoclase :is o :where para resumir misma regla css en una sola para diferentes elementos */
+
+:is(div, .first-list, li) {
+  color: peru;
+}
+
+/* div {
+  color: peru;
+}
+
+div ul {
+  color: peru;
+}
+
+div ul li {
+  color: peru;
+} */
+
+/* selector hijo directo */
+div > p {
+  color: black;
+}
+
+/* selector de descendiente */
+div p {
+  color: black;
+}
+
+/* selector hermano adyacente */
+h2 + p {
+  color: black;
+}
+
+/* selector hermanos generales */
+h2 ~ p {
+  color: black;
+}
+
+/* COMBINACIONES DE SELECTORES */
+
+.first-list li:nth-child(odd):not(.lista) {
+  color: greenyellow;
+}
