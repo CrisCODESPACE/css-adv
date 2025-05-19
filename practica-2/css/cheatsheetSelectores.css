@@ -1,0 +1,83 @@
+/* SELECTORES AVANZADOS */
+
+/* SELECTORES DE ATRIBUTO */
+[href="www.google.com"] {
+  /* todos los elementos que contengan un href donde su valor es www.google.com */
+}
+
+/* selectores atributo que empiecen por un valor en concreto (coincidencia) */
+[href^="www"] {
+  /* todos los elementos que su valor del atributo href empiecen por www */
+}
+
+/* selectores que contengan un valor en concreto (coincidencia) */
+[class*="email"] {
+  /* todos los elementos que su valor en el atributo class contengan email */
+}
+
+/* selectores que terminen en un valor concreto */
+[class$="lista"] {
+  /* todos los elementos que contengan una clase donde su valor termina en lista */
+}
+
+/* SELECTORES COMBINADORES */
+
+div p {
+  /* seleccion de hijo descendiente, no tiene por qué ser hijo directo */
+}
+
+div > p {
+  /* selector de hijo directo */
+}
+
+h1 + p {
+  /* hermano adyacente */
+}
+
+h1 ~ p {
+  /* hermano general */
+}
+
+/* SELECTORES PSEUDCLASE */
+
+li:first-child {
+  /* primer hijo */
+}
+
+section p:last-child {
+  /* ultimo hijo p de cualquier section */
+}
+
+td:nth-child(odd) {
+  /* todas las table data que se encuentren en posiciones impares */
+}
+
+li:nth-child(2) {
+  /* segundo hijo dentro de una lista */
+}
+
+li:nth-child(even) {
+  /* todos los li que estén en posiciones pares */
+}
+
+/* SELECTORES DE PSEUDOCLASES DINAMICAS O DE ESTADO */
+
+button:hover {
+  /* selector para estilos cuando el ratón pasa por encima */
+}
+
+input:focus {
+  /* cuando el input está "enfocado" o activado */
+}
+
+input[type="checkbox"]:checked {
+  /* cuando un checkbox está checked (marcado) */
+}
+
+button:disabled {
+  /* selector para un botón con el atrr disable en true */
+}
+
+button:enabled {
+  /* selector para un botón con el atrr enabled en true */
+}

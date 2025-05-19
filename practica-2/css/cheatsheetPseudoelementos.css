@@ -1,0 +1,32 @@
+/* ::before -> agregar contenido antes del contenido de un elemento */
+
+p::before {
+  content: "**";
+}
+
+/* ::after -> agregar contenido despues del contenido de un elemento */
+
+p::after {
+  content: "😉​";
+}
+
+/* ::first-line -> añadir estilos solo a la primera linea de un texto (depente del ancho del contenedor) */
+
+p::first-line {
+  color: red;
+}
+
+/* ::first-letter -> estiliza la solo la primera letra de un texto */
+
+p::first-letter {
+  text-transform: uppercase;
+  color: blue;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* ::selection -> cambiar el estilo del texto cuando el usuario lo selecciona con el ratón */
+
+p::selection {
+  background-color: yellow;
+  font-weight: bold;
+}

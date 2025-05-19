@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  height: 150px;
+  display: flex; /*esta prop activa flex dentro del contenedor*/
+  /* flex-direction: row-reverse; */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.caja {
+  border: 1px solid red;
+}
+
+.especial {
+  align-self: flex-start;
+  order: 2;
+}
+
+.dos {
+  order: 3;
+}
+
+.tres {
+  order: 1;
+}
+
+/* En el momento que tenemos flex activado dentro de un contenedor podremos usar una serie de props extra */
+
+/* flex-direction -> esta propiedad controlará la dirección de los elementos dentro de un contenedor con flex activado */
+
+/* justify-content -> distribuye los elementos en relacion al eje principal (main axis) */
+
+/* align-items y align-self -> alinear los elementos en relación al eje transversal (cross axis) */
+
+/* align-content -> alinea las lineas completas de elementos (no los items individualmente) */
+
+/* flex-wrap -> permite que los item en un contendor flexible se muevan a otra línea si no caben en la misma */
+
+/* order -> nos va a permitir reordenar los items visualmente */

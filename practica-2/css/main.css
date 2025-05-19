@@ -1,0 +1,27 @@
+h1 + p {
+  background-color: pink;
+}
+
+input:focus {
+  background-color: gray;
+}
+
+h1::after {
+  content: "👉";
+}
+
+.prueba::first-line {
+  text-transform: uppercase;
+  color: coral;
+}
+
+p::first-letter {
+  text-transform: uppercase;
+  color: blue;
+  font-family: "Times New Roman", Times, serif;
+}
+
+p::selection {
+  background-color: rgba(255, 255, 0, 0.375);
+  font-weight: 900;
+}
