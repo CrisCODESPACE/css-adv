@@ -1,0 +1,10 @@
+.caja {
+  width: var(--tamaño-caja);
+  background-color: var(--color-secundario);
+  color: var(--color-principal);
+}
+
+body {
+  background-color: var(--fondo, white);
+  color: var(--texto);
+}

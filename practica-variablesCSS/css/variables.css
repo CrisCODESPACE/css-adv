@@ -1,0 +1,12 @@
+:root {
+  --color-principal: #dda9ff;
+  --color-secundario: #22d2b4;
+  --tamaño-caja: 100px;
+  --fondo: white;
+  --texto: rgb(0, 8, 255);
+}
+
+.tema-oscuro {
+  --fondo: #111;
+  --texto: #eee;
+}

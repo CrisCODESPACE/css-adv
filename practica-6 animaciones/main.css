@@ -1,0 +1,78 @@
+/* SINTAXIS KEYFRAME */
+
+/* keyframes con porcentajes */
+@keyframes nombre {
+  0% {
+    propiedad: valor;
+  }
+  50% {
+    propiedad: valor;
+  }
+  100% {
+    propiedad: valor;
+  }
+}
+
+@keyframes nombre {
+  from {
+    propiedad: valor;
+  }
+  to {
+    propiedad: valor;
+  }
+}
+
+/* keyframe para mover un elemento */
+
+@keyframes mover {
+  from {
+    transform: translateX(0);
+    /* transform: rotate(0deg); */
+  }
+  to {
+    transform: translateX(200px);
+    /* transform: rotate(180deg); */
+  }
+}
+@keyframes rotar {
+  from {
+    /* transform: translateX(0); */
+    transform: rotate(0deg);
+  }
+  to {
+    /* transform: translateX(200px); */
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes cambioColor {
+  0% {
+    background-color: rgb(255, 0, 0);
+  }
+  50% {
+    background-color: rgb(188, 63, 213);
+  }
+  100% {
+    background-color: rgb(29, 74, 208);
+  }
+}
+
+.caja {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  /* animation-name: mover;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.1, 0.88, 0.1, 0.88);
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse; */
+  /* animation: rotar 2s linear infinite, cambioColor 3s alternate infinite; */
+  /* transition: background-color 1s ease; */
+  transform: scale(1);
+  transition: background-color 1s ease, transform 1s linear;
+}
+
+.caja:hover {
+  background-color: palegoldenrod;
+  transform: scale(1.2);
+}
